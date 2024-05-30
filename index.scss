@@ -1,0 +1,319 @@
+$font-body: "Inter", sans-serif;
+$color-white: #fff;
+$color-dark-blue: #5e6e85;
+$color-gunmetal: #253347;
+$color-borders: #d8e2e7;
+$color-blue: #345ff6;
+
+// fonts
+$body-m: "Inter";
+
+// font sizes
+$xs-size: 14px;
+$base-size: 16px;
+$sm-size: 20px;
+$lg-size: 24px;
+$xl-size: 48px;
+$xxl-size: 64px;
+
+$gap-base: 16px;
+$gap-lg: 24px;
+$gap-xl: 32px;
+
+$padding-base: 20px;
+$padding-lg: 24px;
+$padding-xl: 32px;
+
+$border-radius-base: 16px;
+$border-radius-large: 35px;
+$border-radius-round: 999px;
+
+body {
+  margin: 0;
+  font-family: $font-body;
+  background-color: $color-white;
+  color: $color-gunmetal;
+}
+
+.container {
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 737px;
+
+  &-background {
+    position: absolute;
+    top: 0;
+    left: -200px;
+    width: 1178px;
+    height: 737px;
+    border-radius: 0 0 $border-radius-large $border-radius-large;
+    background: linear-gradient(-69.9deg, #d6e6fe, rgba(214, 251, 254, 0));
+  }
+
+  &-content {
+    position: absolute;
+    top: 266px;
+    left: 116px;
+    width: 564px;
+  }
+
+  .icon {
+    position: absolute;
+    top: 75px;
+    left: 116px;
+    width: 64px;
+    height: 64px;
+  }
+
+  .title {
+    font-size: $xxl-size;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    margin: 0;
+  }
+
+  .description {
+    font-size: $base-size;
+    color: $color-dark-blue;
+    line-height: 1.5;
+    margin: $gap-lg 0;
+  }
+
+  .input-section {
+    position: absolute;
+    top: 167px;
+    right: 0;
+    width: 564px;
+    padding: $padding-xl;
+    background-color: $color-white;
+    border-radius: $border-radius-base;
+    box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+    .subtitle {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .units-toggle {
+      display: flex;
+      gap: $gap-base;
+      margin: $gap-lg 0;
+
+      .unit {
+        flex: 1;
+        display: flex;
+        gap: $gap-base;
+        align-items: center;
+        cursor: pointer;
+        font-weight: 600;
+
+        .selector {
+          width: 31px;
+          height: 31px;
+          position: relative;
+          border-radius: 50%;
+          background-color: $color-white;
+          border: 1px solid $color-borders;
+          box-sizing: border-box;
+          cursor: pointer;
+          transition: all 0.5s;
+          &:hover {
+            border: 1px solid $color-blue;
+          }
+        }
+      }
+    }
+    .input-container {
+      display: flex;
+      gap: $gap-lg;
+      .input-item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: $gap-base;
+
+        label {
+          font-size: 14px;
+          color: $color-dark-blue;
+        }
+        .input-wrapper {
+          display: flex;
+          align-items: center;
+          gap: $gap-base;
+          padding: $padding-base;
+          border: 1px solid $color-borders;
+          border-radius: $border-radius-base;
+
+          input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            width: 100%;
+            font-weight: 600;
+            font-size: $lg-size;
+          }
+
+          .unit-label {
+            font-size: $lg-size;
+            color: $color-blue;
+            letter-spacing: -0.05em;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    .bmi-result {
+      display: flex;
+      padding: $padding-base;
+      align-self: stretch;
+      border-radius: $border-radius-base $border-radius-round
+        $border-radius-round $border-radius-base;
+      background: linear-gradient(90deg, #345ff7, #587dff);
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: $gap-xl;
+      color: $color-white;
+      margin-top: 32px;
+      .header {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        .result-label {
+          position: relative;
+          font-weight: 600;
+          align-self: stretch;
+          line-height: 150%;
+          font-size: $base-size;
+        }
+        .result-value {
+          position: relative;
+          font-weight: 600;
+          font-size: $xl-size;
+          letter-spacing: -0.05em;
+          line-height: 110%;
+        }
+      }
+      .result-description {
+        flex: 1;
+        font-size: $xs-size;
+        line-height: 150%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .hero {
+    &-background {
+      left: -50px;
+      width: 1048px;
+    }
+    .icon {
+      left: 0px;
+    }
+    &-content {
+      left: 0px;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .hero {
+    &-background {
+      left: -30px;
+      width: 708px;
+      height: 667px;
+    }
+    &-content {
+      left: 0px;
+      width: 385px;
+    }
+    .icon {
+      left: 0px;
+    }
+    .title {
+      font-size: $xl-size;
+    }
+    .description {
+      font-size: $xs-size;
+    }
+    .input-section {
+      width: 504px;
+      padding: $padding-lg;
+    }
+    .input-section {
+      .input-item {
+        .input-wrapper {
+          padding: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    &-background {
+      left: 0;
+      width: 100%;
+    }
+    .icon {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &-content {
+      left: 0px;
+      width: 100%;
+      text-align: center;
+      padding: 0px $padding-xl;
+      top: 20%;
+    }
+    .input-section {
+      top: 85%;
+      right: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 650px;
+    }
+  }
+  .hero-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .hero {
+    .input-section {
+      top: 100%;
+      width: 350px;
+      .input-container {
+        flex-direction: column;
+        .input-item {
+          width: 100%;
+          .input-wrapper {
+            padding: 12px;
+          }
+        }
+      }
+      .bmi-result {
+        flex-direction: column;
+        gap: 0px;
+        align-items: start;
+        border-radius: $border-radius-base;
+      }
+    }
+  }
+}

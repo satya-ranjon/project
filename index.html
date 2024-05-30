@@ -10,6 +10,7 @@
       crossorigin="anonymous" />
 
     <link rel="stylesheet" href="index.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" />
@@ -71,65 +72,88 @@
         </div>
       </section>
     </div>
-    <div class="container">
-      <!-- <section class="bmi-meaning">
-        <h2 class="section-title">What your BMI result means</h2>
-        <p>
-          A BMI range of 18.5 to 24.9 is considered a 'healthy weight.'
-          Maintaining a healthy weight may lower your chances of experiencing
-          health issues later on, such as obesity and type 2 diabetes. Aim for a
-          nutritious diet with reduced fat and sugar content, incorporating
-          ample fruits and vegetables. Additionally, strive for regular physical
-          activity, ideally about 30 minutes daily for five days a week.
-        </p>
-        <img
-          class="bmi-image"
-          src="./public/imageremovebgpreview283-1@2x.png"
-          alt="BMI" />
-      </section> -->
 
-      <!-- <section class="tips">
-        <h2 class="section-title">Tips</h2>
+    <div class="container">
+      <section class="bmi-meaning">
+        <div class="section-one">
+          <img
+            class="bmi-image"
+            src="./public/imageremovebgpreview283-1@2x.png"
+            alt="BMI" />
+        </div>
+        <div class="section-two">
+          <h2 class="section-title">What your BMI result means</h2>
+          <p>
+            A BMI range of 18.5 to 24.9 is considered a 'healthy weight.'
+            Maintaining a healthy weight may lower your chances of experiencing
+            health issues later on, such as obesity and type 2 diabetes. Aim for
+            a nutritious diet with reduced fat and sugar content, incorporating
+            ample fruits and vegetables. Additionally, strive for regular
+            physical activity, ideally about 30 minutes daily for five days a
+            week.
+          </p>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <section class="tips">
+        <div class="tips-bg"></div>
         <div class="tips-content">
           <div class="tip">
             <img src="./public/group-40.svg" alt="Healthy Eating" />
-            <h3>Healthy eating</h3>
-            <p>
-              Healthy eating promotes weight control, disease prevention, better
-              digestion, immunity, mental clarity, and mood.
-            </p>
+            <div class="content">
+              <h3>Healthy eating</h3>
+              <p>
+                Healthy eating promotes weight control, disease prevention,
+                better digestion, immunity, mental clarity, and mood.
+              </p>
+            </div>
           </div>
           <div class="tip">
             <img src="./public/group-41.svg" alt="Regular Exercise" />
-            <h3>Regular exercise</h3>
-            <p>
-              Exercise improves fitness, aids weight control, elevates mood, and
-              reduces disease risk, fostering wellness and longevity.
-            </p>
+            <div class="content">
+              <h3>Regular exercise</h3>
+              <p>
+                Exercise improves fitness, aids weight control, elevates mood,
+                and reduces disease risk, fostering wellness and longevity.
+              </p>
+            </div>
           </div>
           <div class="tip">
             <img src="./public/group-42.svg" alt="Adequate Sleep" />
-            <h3>Adequate sleep</h3>
-            <p>
-              Sleep enhances mental clarity, emotional stability, and physical
-              wellness, promoting overall restoration and rejuvenation.
-            </p>
+            <div class="content">
+              <h3>Adequate sleep</h3>
+              <p>
+                Sleep enhances mental clarity, emotional stability, and physical
+                wellness, promoting overall restoration and rejuvenation.
+              </p>
+            </div>
           </div>
         </div>
-      </section> -->
+      </section>
+    </div>
 
-      <!-- <section class="bmi-limitations">
-        <h2 class="section-title">Limitations of BMI</h2>
-        <p>
-          Although BMI is often a practical indicator of healthy weight, it is
-          not suited for every person. Specific groups should carefully consider
-          their BMI outcomes, and in certain cases, the measurement may not be
-          beneficial to use.
-        </p>
+    <div class="container">
+      <section class="bmi-limitations">
+        <div class="contant">
+          <h2 class="section-title">Limitations of BMI</h2>
+          <p>
+            Although BMI is often a practical indicator of healthy weight, it is
+            not suited for every person. Specific groups should carefully
+            consider their BMI outcomes, and in certain cases, the measurement
+            may not be beneficial to use.
+          </p>
+        </div>
         <div class="limitations-content">
           <div class="limitation">
-            <img src="./public/phgenderintersexlight.svg" alt="Gender" />
-            <h3>Gender</h3>
+            <div class="box">
+              <img
+                class="icon"
+                src="./public/phgenderintersexlight.svg"
+                alt="Gender" />
+              <h3>Gender</h3>
+            </div>
+
             <p>
               The development and body fat composition of girls and boys vary
               with age. Consequently, a child's age and gender are considered
@@ -137,26 +161,36 @@
             </p>
           </div>
           <div class="limitation">
-            <img src="./public/phcakelight.svg" alt="Age" />
-            <h3>Age</h3>
+            <div class="box">
+              <img class="icon" src="./public/phcakelight.svg" alt="Gender" />
+              <h3>Age</h3>
+            </div>
+
             <p>
               In aging individuals, increased body fat and muscle loss may cause
               BMI to underestimate body fat content.
             </p>
           </div>
           <div class="limitation">
-            <img
-              src="./public/fluentemojihighcontrastflexedbiceps.svg"
-              alt="Muscle" />
-            <h3>Muscle</h3>
+            <div class="box">
+              <img
+                class="icon"
+                src="./public/fluentemojihighcontrastflexedbiceps.svg"
+                alt="Gender" />
+              <h3>Muscle</h3>
+            </div>
+
             <p>
               BMI may misclassify muscular individuals as overweight or obese,
               as it doesn't differentiate muscle from fat.
             </p>
           </div>
           <div class="limitation">
-            <img src="./public/phbabylight.svg" alt="Pregnancy" />
-            <h3>Pregnancy</h3>
+            <div class="box">
+              <img class="icon" src="./public/phbabylight.svg" alt="Gender" />
+              <h3>Pregnancy</h3>
+            </div>
+
             <p>
               Expectant mothers experience weight gain due to their growing
               baby. Maintaining a healthy pre-pregnancy BMI is advisable to
@@ -164,8 +198,11 @@
             </p>
           </div>
           <div class="limitation">
-            <img src="./public/phpersonlight.svg" alt="Race" />
-            <h3>Race</h3>
+            <div class="box">
+              <img class="icon" src="./public/phpersonlight.svg" alt="Race" />
+              <h3>Race</h3>
+            </div>
+
             <p>
               Certain health concerns may affect individuals of some Black and
               Asian origins at lower BMIs than others. To learn more, it is
@@ -173,9 +210,9 @@
             </p>
           </div>
         </div>
-      </section> -->
+      </section>
     </div>
-
+    <img class="desktop-child" alt="" src="./public/vector-241.svg" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

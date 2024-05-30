@@ -34,7 +34,10 @@
           <h2 class="subtitle">Enter your details below</h2>
           <div class="units-toggle">
             <div class="unit active">
-              <img class="frame-child" alt="" src="./public/group-32.svg" />
+              <img
+                class="frame-child unselector"
+                alt=""
+                src="./public/group-32.svg" />
               <span>Metric</span>
             </div>
             <div class="unit">
@@ -42,22 +45,55 @@
               <span>Imperial</span>
             </div>
           </div>
-          <div class="input-container">
-            <div class="input-item">
-              <label for="height">Height</label>
-              <div class="input-wrapper">
-                <input type="text" id="height" value="185" />
-                <span class="unit-label">cm</span>
+          <div class="" id="imperial-input">
+            <div class="input-container imperial-input">
+              <div class="input-item">
+                <label for="height">Height</label>
+                <div class="input-wrapper">
+                  <input type="text" id="height" value="185" />
+                  <span class="unit-label">ft</span>
+                </div>
+              </div>
+              <div class="input-item">
+                <div class="input-wrapper">
+                  <input type="text" id="height" value="185" />
+                  <span class="unit-label">in</span>
+                </div>
               </div>
             </div>
-            <div class="input-item">
-              <label for="height">Height</label>
-              <div class="input-wrapper">
-                <input type="text" id="height" value="185" />
-                <span class="unit-label">cm</span>
+            <div class="input-container imperial-input">
+              <div class="input-item">
+                <label for="height">Height</label>
+                <div class="input-wrapper">
+                  <input type="text" id="height" value="185" />
+                  <span class="unit-label">st</span>
+                </div>
+              </div>
+              <div class="input-item">
+                <div class="input-wrapper">
+                  <input type="text" id="height" value="185" />
+                  <span class="unit-label">lbs</span>
+                </div>
               </div>
             </div>
           </div>
+
+          <!-- <div class="input-container " id="metric-input">
+            <div class="input-item">
+              <label for="height">Height</label>
+              <div class="input-wrapper">
+                <input type="text" id="height" value="185" />
+                <span class="unit-label">cm</span>
+              </div>
+            </div>
+            <div class="input-item">
+              <label for="height">Weight</label>
+              <div class="input-wrapper">
+                <input type="text" id="height" value="185" />
+                <span class="unit-label">kg</span>
+              </div>
+            </div>
+          </div> -->
 
           <div class="bmi-result">
             <div class="header">

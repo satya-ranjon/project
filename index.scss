@@ -107,13 +107,16 @@ body {
         display: flex;
         gap: $gap-base;
         align-items: center;
-        cursor: pointer;
+        // cursor: pointer;
         font-weight: 600;
-
+        .unselector {
+          cursor: pointer;
+        }
         .selector {
           width: 31px;
           height: 31px;
           position: relative;
+
           border-radius: 50%;
           background-color: $color-white;
           border: 1px solid $color-borders;
@@ -134,6 +137,8 @@ body {
         display: flex;
         flex-direction: column;
         gap: $gap-base;
+        justify-content: end;
+        margin-bottom: 1rem;
 
         label {
           font-size: 14px;
@@ -530,7 +535,7 @@ body {
       top: 20%;
     }
     .input-section {
-      top: 85%;
+      top: 95%;
       right: 0;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -544,8 +549,8 @@ body {
     padding: 0;
   }
   .bmi-meaning {
+    padding-top: 15rem;
     .section-one {
-      padding-top: 12rem;
       padding-bottom: 0px;
       .bmi-image {
         width: 268px;
@@ -583,7 +588,7 @@ body {
       height: 100%;
       margin-bottom: 5rem;
       .limitation {
-        max-width: 90%;
+        max-width: 8%;
         position: sticky;
 
         &:nth-child(1) {
@@ -624,6 +629,9 @@ body {
             padding: 12px;
           }
         }
+      }
+      .imperial-input {
+        flex-direction: row;
       }
       .bmi-result {
         flex-direction: column;

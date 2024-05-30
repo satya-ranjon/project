@@ -72,8 +72,10 @@ body {
   display: flex;
   gap: 16px;
   align-items: center;
-  cursor: pointer;
   font-weight: 600;
+}
+.hero .input-section .units-toggle .unit .unselector {
+  cursor: pointer;
 }
 .hero .input-section .units-toggle .unit .selector {
   width: 31px;
@@ -98,6 +100,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  justify-content: end;
+  margin-bottom: 1rem;
 }
 .hero .input-section .input-container .input-item label {
   font-size: 14px;
@@ -464,7 +468,7 @@ body {
     top: 20%;
   }
   .hero .input-section {
-    top: 85%;
+    top: 95%;
     right: 0;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -476,8 +480,10 @@ body {
     margin: 0;
     padding: 0;
   }
+  .bmi-meaning {
+    padding-top: 15rem;
+  }
   .bmi-meaning .section-one {
-    padding-top: 12rem;
     padding-bottom: 0px;
   }
   .bmi-meaning .section-one .bmi-image {
@@ -510,7 +516,7 @@ body {
     margin-bottom: 5rem;
   }
   .bmi-limitations .limitations-content .limitation {
-    max-width: 90%;
+    max-width: 8%;
     position: sticky;
   }
   .bmi-limitations .limitations-content .limitation:nth-child(1) {
@@ -547,6 +553,9 @@ body {
   }
   .hero .input-section .input-container .input-item .input-wrapper {
     padding: 12px;
+  }
+  .hero .input-section .imperial-input {
+    flex-direction: row;
   }
   .hero .input-section .bmi-result {
     flex-direction: column;

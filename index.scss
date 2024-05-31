@@ -416,7 +416,7 @@ body {
     }
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .hero {
     &-background {
       left: -30px;
@@ -511,7 +511,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .desktop-child {
     display: none;
   }
@@ -617,7 +617,7 @@ body {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
   .hero {
     .input-section {
       top: 105%;

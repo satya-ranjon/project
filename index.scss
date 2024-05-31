@@ -586,6 +586,7 @@ body {
       gap: $gap-lg;
       margin-top: 3rem;
       height: 100%;
+      width: 100%;
       margin-bottom: 5rem;
       .limitation {
         max-width: 80%;
@@ -619,8 +620,8 @@ body {
 @media (max-width: 425px) {
   .hero {
     .input-section {
-      top: 100%;
-      width: 370px;
+      top: 105%;
+      width: 360px;
       .input-container {
         flex-direction: column;
         .input-item {
@@ -649,6 +650,7 @@ body {
     .section-one {
       padding-top: 12rem;
       padding-bottom: 0px;
+      padding: 2.5rem;
       .bmi-image {
         width: 268px;
         height: 333px;
@@ -656,13 +658,17 @@ body {
     }
     .section-two {
       margin-top: 2rem;
+      padding: 2.5rem;
       p {
         font-size: $xs-size;
       }
     }
   }
   .tips {
-    padding: 1rem;
+    padding: 2rem;
+    .tips-bg {
+      right: 0%;
+    }
     .tips-content {
       flex-direction: column;
       .tip {
@@ -677,9 +683,9 @@ body {
       gap: $gap-lg;
       margin-top: 3rem;
       height: 100%;
-      left: 10px;
+      left: 0px;
       .limitation {
-        max-width: 100%;
+        max-width: 80%;
         padding: 2rem;
       }
     }

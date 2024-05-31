@@ -554,7 +554,7 @@ body {
   .hero .input-section .input-container .input-item .input-wrapper {
     padding: 12px;
   }
-  .hero .input-section .imperial-input {
+  .hero .input-section .imperial-input-box {
     flex-direction: row;
   }
   .hero .input-section .bmi-result {

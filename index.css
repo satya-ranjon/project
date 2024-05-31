@@ -516,7 +516,7 @@ body {
     margin-bottom: 5rem;
   }
   .bmi-limitations .limitations-content .limitation {
-    max-width: 8%;
+    max-width: 80%;
     position: sticky;
   }
   .bmi-limitations .limitations-content .limitation:nth-child(1) {

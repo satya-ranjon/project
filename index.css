@@ -252,87 +252,57 @@ body {
   font-size: 24px;
 }
 
-.bmi-limitations {
-  margin-top: 5rem;
-}
-.bmi-limitations .contant {
-  max-width: 600px;
-}
-.bmi-limitations .contant .section-title {
-  font-size: 48px;
-  font-weight: 600;
-}
-.bmi-limitations .contant p {
-  font-size: 14px;
-  color: #5e6e85;
-}
-.bmi-limitations .limitations-content {
-  position: relative;
-  height: 700px;
-}
-.bmi-limitations .limitations-content .limitation {
-  position: absolute;
-  box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.175);
-  border-radius: 16px;
-  background-color: #fff;
-  width: 365px;
-  overflow: hidden;
-  padding: 24px;
-  box-sizing: border-box;
-}
-.bmi-limitations .limitations-content .limitation:nth-child(1) {
-  top: -20%;
-  right: 10%;
-}
-.bmi-limitations .limitations-content .limitation:nth-child(2) {
-  top: 17%;
-  right: 0%;
-}
-.bmi-limitations .limitations-content .limitation:nth-child(3) {
-  top: 17%;
-  right: 31%;
-}
-.bmi-limitations .limitations-content .limitation:nth-child(4) {
-  top: 47%;
-  right: 18.2%;
-}
-.bmi-limitations .limitations-content .limitation:nth-child(5) {
-  top: 47%;
-  right: 49.3%;
-}
-.bmi-limitations .limitations-content .limitation .box {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 16px;
-}
-.bmi-limitations .limitations-content .limitation .box .icon {
-  width: 32px;
-  position: relative;
-  height: 32px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.bmi-limitations .limitations-content .limitation .box h3 {
-  letter-spacing: -0.05em;
-  font-weight: 600;
-}
-.bmi-limitations .limitations-content .limitation p {
-  align-self: stretch;
-  position: relative;
-  font-size: 16px;
-  line-height: 150%;
-  color: #5e6e85;
-}
-
 .desktop-child {
   position: absolute;
   top: 749px;
   width: 85px;
   height: 200px;
   right: 20%;
+}
+
+.bmi-limitations {
+  position: relative;
+  margin-top: 7rem;
+}
+.bmi-limitations .contant {
+  max-width: 400px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.limitation {
+  /* position: absolute; */
+  box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.175);
+  border-radius: 16px;
+  background-color: #fff;
+  width: 365px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.limitations-content .row .col-12,
+.col-8,
+.pregnancy-box,
+.muscle-box,
+.age-box,
+.col-4 {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.limitations-content .row .muscle-box {
+  justify-content: start;
+}
+.limitations-content .gender {
+  margin-right: 10%;
+}
+.limitations-content .pregnancy {
+  margin-right: 20%;
+}
+.limitations-content .age {
+  margin-top: 2.5rem;
 }
 
 @media (max-width: 1440px) {
@@ -407,41 +377,6 @@ body {
   .tips .tips-content {
     gap: 2rem;
   }
-  .bmi-limitations .contant {
-    max-width: 400px;
-  }
-  .bmi-limitations .contant .section-title {
-    font-size: 24px;
-  }
-  .bmi-limitations .limitations-content .limitation {
-    max-width: 260px;
-  }
-  .bmi-limitations .limitations-content .limitation .box h3 {
-    font-size: 20px;
-  }
-  .bmi-limitations .limitations-content .limitation p {
-    font-size: 14px;
-  }
-  .bmi-limitations .limitations-content .limitation:nth-child(1) {
-    top: -20%;
-    right: 10%;
-  }
-  .bmi-limitations .limitations-content .limitation:nth-child(2) {
-    top: 17%;
-    right: 0%;
-  }
-  .bmi-limitations .limitations-content .limitation:nth-child(3) {
-    top: 17%;
-    right: 31%;
-  }
-  .bmi-limitations .limitations-content .limitation:nth-child(4) {
-    top: 47%;
-    right: 18.2%;
-  }
-  .bmi-limitations .limitations-content .limitation:nth-child(5) {
-    top: 47%;
-    right: 49.3%;
-  }
   .desktop-child {
     top: 669px;
   }
@@ -500,45 +435,18 @@ body {
     flex-direction: row;
   }
   .bmi-limitations .contant {
+    position: relative;
     max-width: 100%;
     text-align: center;
-    padding: 0px 2rem;
   }
-  .bmi-limitations .contant .section-title {
-    font-size: 24px;
+  .limitations-content .gender {
+    margin-right: 0%;
   }
-  .bmi-limitations .limitations-content {
-    display: inline-grid;
-    grid-template-columns: auto auto;
-    gap: 24px;
-    margin-top: 3rem;
-    height: 100%;
+  .limitations-content .pregnancy {
+    margin-right: 0%;
+  }
+  .limitation {
     width: 100%;
-    margin-bottom: 5rem;
-  }
-  .bmi-limitations .limitations-content .limitation {
-    max-width: 80%;
-    position: sticky;
-  }
-  .bmi-limitations .limitations-content .limitation:nth-child(1) {
-    top: 0%;
-    right: 0%;
-  }
-  .bmi-limitations .limitations-content .limitation:nth-child(2) {
-    top: 0%;
-    right: 0%;
-  }
-  .bmi-limitations .limitations-content .limitation:nth-child(3) {
-    top: 0%;
-    right: 0%;
-  }
-  .bmi-limitations .limitations-content .limitation:nth-child(4) {
-    top: 0%;
-    right: 0%;
-  }
-  .bmi-limitations .limitations-content .limitation:nth-child(5) {
-    top: 0%;
-    right: 0%;
   }
 }
 @media (max-width: 767px) {
@@ -596,17 +504,5 @@ body {
   }
   .tips .tips-content .tip {
     flex-direction: column;
-  }
-  .bmi-limitations .limitations-content {
-    grid-template-columns: auto;
-    justify-items: center;
-    gap: 24px;
-    margin-top: 3rem;
-    height: 100%;
-    left: 0px;
-  }
-  .bmi-limitations .limitations-content .limitation {
-    max-width: 80%;
-    padding: 2rem;
   }
 }/*# sourceMappingURL=index.css.map */

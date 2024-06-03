@@ -298,88 +298,60 @@ body {
   }
 }
 
-.bmi-limitations {
-  margin-top: 5rem;
-  .contant {
-    max-width: 600px;
-    .section-title {
-      font-size: $xl-size;
-      font-weight: 600;
-    }
-    p {
-      font-size: $xs-size;
-      color: $color-dark-blue;
-    }
-  }
-  .limitations-content {
-    position: relative;
-    height: 700px;
-    .limitation {
-      position: absolute;
-      box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.175);
-      border-radius: $border-radius-base;
-      background-color: $color-white;
-      width: 365px;
-      overflow: hidden;
-      padding: $padding-lg;
-      box-sizing: border-box;
-
-      &:nth-child(1) {
-        top: -20%;
-        right: 10%;
-      }
-      &:nth-child(2) {
-        top: 17%;
-        right: 0%;
-      }
-      &:nth-child(3) {
-        top: 17%;
-        right: 31%;
-      }
-      &:nth-child(4) {
-        top: 47%;
-        right: 18.2%;
-      }
-      &:nth-child(5) {
-        top: 47%;
-        right: 49.3%;
-      }
-      .box {
-        align-self: stretch;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        gap: $gap-base;
-        .icon {
-          width: 32px;
-          position: relative;
-          height: 32px;
-          overflow: hidden;
-          flex-shrink: 0;
-        }
-        h3 {
-          letter-spacing: -0.05em;
-          font-weight: 600;
-        }
-      }
-      p {
-        align-self: stretch;
-        position: relative;
-        font-size: $base-size;
-        line-height: 150%;
-        color: $color-dark-blue;
-      }
-    }
-  }
-}
-
 .desktop-child {
   position: absolute;
   top: 749px;
   width: 85px;
   height: 200px;
   right: 20%;
+}
+
+.bmi-limitations {
+  position: relative;
+  margin-top: 7rem;
+  .contant {
+    max-width: 400px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+}
+
+.limitation {
+  /* position: absolute; */
+  box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.175);
+  border-radius: 16px;
+  background-color: #fff;
+  width: 365px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.limitations-content .row .col-12,
+.col-8,
+.pregnancy-box,
+.muscle-box,
+.age-box,
+.col-4 {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+.limitations-content {
+  .row {
+    .muscle-box {
+      justify-content: start;
+    }
+  }
+  .gender {
+    margin-right: 10%;
+  }
+  .pregnancy {
+    margin-right: 20%;
+  }
+  .age {
+    margin-top: 2.5rem;
+  }
 }
 
 @media (max-width: 1440px) {
@@ -465,47 +437,7 @@ body {
       gap: 2rem;
     }
   }
-  .bmi-limitations {
-    .contant {
-      max-width: 400px;
-      .section-title {
-        font-size: $lg-size;
-      }
-    }
-    .limitations-content {
-      .limitation {
-        max-width: 260px;
-        .box {
-          h3 {
-            font-size: $sm-size;
-          }
-        }
-        p {
-          font-size: $xs-size;
-        }
-        &:nth-child(1) {
-          top: -20%;
-          right: 10%;
-        }
-        &:nth-child(2) {
-          top: 17%;
-          right: 0%;
-        }
-        &:nth-child(3) {
-          top: 17%;
-          right: 31%;
-        }
-        &:nth-child(4) {
-          top: 47%;
-          right: 18.2%;
-        }
-        &:nth-child(5) {
-          top: 47%;
-          right: 49.3%;
-        }
-      }
-    }
-  }
+
   .desktop-child {
     top: 669px;
   }
@@ -571,49 +503,21 @@ body {
       }
     }
   }
-  .bmi-limitations {
-    .contant {
-      max-width: 100%;
-      text-align: center;
-      padding: 0px 2rem;
-      .section-title {
-        font-size: $lg-size;
-      }
+  .bmi-limitations .contant {
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+  }
+  .limitations-content {
+    .gender {
+      margin-right: 0%;
     }
-    .limitations-content {
-      display: inline-grid;
-      grid-template-columns: auto auto;
-      gap: $gap-lg;
-      margin-top: 3rem;
-      height: 100%;
-      width: 100%;
-      margin-bottom: 5rem;
-      .limitation {
-        max-width: 80%;
-        position: sticky;
-
-        &:nth-child(1) {
-          top: 0%;
-          right: 0%;
-        }
-        &:nth-child(2) {
-          top: 0%;
-          right: 0%;
-        }
-        &:nth-child(3) {
-          top: 0%;
-          right: 0%;
-        }
-        &:nth-child(4) {
-          top: 0%;
-          right: 0%;
-        }
-        &:nth-child(5) {
-          top: 0%;
-          right: 0%;
-        }
-      }
+    .pregnancy {
+      margin-right: 0%;
     }
+  }
+  .limitation {
+    width: 100%;
   }
 }
 
@@ -673,20 +577,6 @@ body {
       flex-direction: column;
       .tip {
         flex-direction: column;
-      }
-    }
-  }
-  .bmi-limitations {
-    .limitations-content {
-      grid-template-columns: auto;
-      justify-items: center;
-      gap: $gap-lg;
-      margin-top: 3rem;
-      height: 100%;
-      left: 0px;
-      .limitation {
-        max-width: 80%;
-        padding: 2rem;
       }
     }
   }
